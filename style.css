@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --main-color: #191919;
+  --text-color: #dddddd;
+  --second-color: #e43d40;
+  --df-margin: 10px;
+  --df-padding: 10px;
+  --df-radius: 5px;
+  --df-border: 5px solid var(--second-color);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--main-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.boinaryApp {
+  border: 2px solid var(--second-color);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 30 rgba(0, 0, 0, 0.4);
+  max-width: 500px;
+  width: 100%;
+}
+
+.row {
+  /* background: rgb(61, 56, 56); */
+  margin: 2px;
+  display: grid;
+  grid-template-columns: 1fr 80% 1fr;
+  grid-gap: 7px;
+  height: 30px;
+  text-align: right;
+  align-items: center;
+}
+
+.topNumbers,
+.number,
+.result {
+  grid-column: 2/3;
+  font-family: "Fira Code";
+}
+
+.topNumbers {
+  color: grey;
+}
+
+.operators {
+  max-height: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--second-color);
+  border-radius: 5px;
+}
+
+.addNew {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--second-color);
+  width: 30px;
+}
+
+.none {
+  display: none;
+}
+
+.number {
+  text-align: right;
+  color: var(--text-color);
+  background: transparent;
+  font-size: 16px;
+  border: none;
+  padding: 0;
+}
+.result {
+  border-top: 2px solid var(--second-color);
+}
